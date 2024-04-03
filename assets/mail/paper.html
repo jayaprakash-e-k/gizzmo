@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Paper Submitted Successfullly - GIZZMO 2K24 | A National Level
+      Technical Symposium
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: min(90%, 800px);
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      .container .header {
+        background-color: #252525;
+      }
+
+      .container .header img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .container .content {
+        padding: 1.5rem 2rem;
+      }
+
+      .container .content h2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+      .container .content p {
+        text-align: justify;
+      }
+
+      .container .content .text {
+        text-indent: 15px;
+      }
+
+      .container .content .regards {
+        text-align: right;
+        margin-top: 20px;
+      }
+
+      .container .content h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      .container .content ul {
+        margin-left: 20px;
+        list-style: none;
+      }
+
+      .container .content ul li {
+        margin-bottom: 10px;
+      }
+
+      .container .content ul li button {
+        border: none;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+      }
+
+      .container .content ul li button a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: #00a524;
+        border-radius: 5px;
+      }
+
+      .container .content ul li b {
+        font-weight: bold;
+      }
+
+      .container .content .qr-code {
+        text-align: center;
+      }
+
+      .container .content .qr-code p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .container .content .qr-code img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-top: 10px;
+      }
+      .container .footer {
+        background-color: #252525;
+        padding: 1rem 2rem;
+        color: #fff;
+        text-align: center;
+      }
+
+      .container .footer p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .container .footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .container .footer .social-links a {
+        font-size: 1.5rem;
+        color: var(--clr);
+        transition: color 0.3s;
+      }
+
+      .container .footer .social-links a img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/ef6be5e094.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- TODO: Add Gizzmo Logo With Header -->
+      <div class="header">
+        <img src="{{gizzmo_logo}}" alt="Gizzmo Logo" />
+      </div>
+
+      <div class="content">
+        <h2>Dear {{participant_name}}</h2>
+
+        <p class="text">We hope this message finds you well,</p>
+        <br />
+
+        <p class="text">
+            We are writing to confirm that your paper submission for the 
+            <b>Paper Presntation Event</b> has been successfully uploaded and 
+            received. Thank you for your contribution for this event.
+        <br /><br />
+
+        <h3>Paper Submission Details:</h3>
+        <ul>
+          <li><b>Paper ID :</b> {{pid}}</li>
+
+          <li><b>Paper Title :</b> {{paper_title}}</li>
+
+          <li><b>Team Leader ID :</b> {{team_leader_id}}</li>
+
+          <li><b>Member 1 ID :</b> {{member_1}}</li>
+
+          <li><b>Member 2 ID :</b> {{member_2}}</li>
+
+        </ul>
+        <br /><br />
+
+        <p>&emsp; Your submission will undergo a thorough review process by our expert panel 
+            of reviewers. We will notify you of the outcome once the review process is 
+            complete.</p>
+        <br />
+        <p>&emsp;In the meantime, if you have any questions or need further assistance, 
+            please don't hesitate to contact us at <b>gizzmo2k24@esec.ac.in</b></p>
+        <br />
+        <p>&emsp;Thank you for your participation and commitment.
+            We appreciate your dedication to academic excellence and look forward to your continued involvement in 
+            our scholarly endeavors.</p>
+        <br />
+
+        <p class="regards">
+          <b>Best regards,</b>
+          <br />
+          Gizzmo Team
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>© 2024 Gizzmo. All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/profile.php?id=61551881603513"
+            target="_blank"
+            style="--clr: #316ff6"
+          >
+          <img src="https://img.icons8.com/color/48/000000/facebook-new.png"/>
+          </a>
+          <a
+            href="https://www.instagram.com/cse_esec"
+            target="_blank"
+            style="--clr: #d62976"
+          >
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png"/>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/esecindia"
+            target="_blank"
+            style="--clr: #0077b5"
+          >
+          <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+          </a>
+          <a
+            href="https://youtube.com/@esecindia/"
+            target="_blank"
+            style="--clr: #cd201f"
+          >
+          <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

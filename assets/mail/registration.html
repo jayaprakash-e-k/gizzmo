@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Payment Proof Submitted Successfullly - GIZZMO 2K24 | A National Level
+      Technical Symposium
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: min(90%, 800px);
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      .container .header {
+        background-color: #252525;
+      }
+
+      .container .header img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .container .content {
+        padding: 1.5rem 2rem;
+      }
+
+      .container .content h2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+      .container .content p {
+        text-align: justify;
+      }
+
+      .container .content .text {
+        text-indent: 15px;
+      }
+
+      .container .content .regards {
+        text-align: right;
+        margin-top: 20px;
+      }
+
+      .container .content h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      .container .content ul {
+        margin-left: 20px;
+        list-style: none;
+      }
+
+      .container .content ul li {
+        margin-bottom: 10px;
+      }
+
+      .container .content ul li button {
+        border: none;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+      }
+
+      .container .content ul li button a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: #00a524;
+        border-radius: 5px;
+      }
+
+      .container .content ul li b {
+        font-weight: bold;
+      }
+
+      .container .content .qr-code {
+        text-align: center;
+      }
+
+      .container .content .qr-code p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .container .content .qr-code img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-top: 10px;
+      }
+      .container .footer {
+        background-color: #252525;
+        padding: 1rem 2rem;
+        color: #fff;
+        text-align: center;
+      }
+
+      .container .footer p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .container .footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .container .footer .social-links a {
+        font-size: 1.5rem;
+        color: var(--clr);
+        transition: color 0.3s;
+      }
+
+      .container .footer .social-links a img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/ef6be5e094.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- TODO: Add Gizzmo Logo With Header -->
+      <div class="header">
+        <img src="{{gizzmo_logo}}" alt="Gizzmo Logo" />
+      </div>
+
+      <div class="content">
+        <h2>Dear {{participant_name}}</h2>
+
+        <p class="text">We hope this message finds you well.</p>
+        <br />
+
+        <p class="text">
+          We are pleased to inform you that your registration for the upcoming
+          an National Level Technical Symposium organised by the Department of
+          Computer Science and Engineering, Erode Sengunthar Engineering
+          College, has been successfully completed. We appreciate your interest
+          in joining us for this enriching event.
+        </p>
+        <br /><br />
+
+        <h3>Event Details:</h3>
+        <ul>
+          <li><b>Symposium Title :</b> {{symposium_title}}</li>
+
+          <li><b>Date :</b> {{date}}</li>
+
+          <li><b>Venue :</b> {{venue}}</li>
+        </ul>
+        <br /><br />
+
+        <p>
+          We would like to remind you that the deadline for submitting your
+          presentaion paper is {{paper_submission_deadline}}. Please ensure that
+          you submit your paper before the deadline to avoid any inconvenience. If you 
+          haven't registered for paper presentation, you can ignore this part of mail.
+        </p>
+        <br /><br />
+
+        <ul>
+          <li>
+            <button>
+              <a href="{{paper_upload_link}}">Upload Paper</a>
+            </button>
+          </li>
+        </ul>
+        <br /><br />
+
+        <h3>Your registration details are as follows:</h3>
+        <ul>
+          <li><b>GIZZMO ID :</b> {{user_id}}</li>
+
+          <li><b>Email Address :</b> {{email_add}}</li>
+
+          <li><b>Contact Number :</b> {{contact_no}}</li>
+        </ul>
+        <br /><br />
+
+        <p>
+          Use the account details below to pay the registration fee, or scan the
+          QR code:
+        </p>
+        <br />
+        <ul>
+          <li><b>The Principal,</b> Erode Sengunthar Engineering College</li>
+          <li><b>SB A/C No.:</b> 500101012593567</li>
+          <li><b>Bank:</b> City Union Bank</li>
+          <li><b>Branch:</b> Erode Branch</li>
+          <li><b>IFS Code:</b> CIUB0000059</li>
+        </ul>
+        <br /><br />
+
+        <div class="qr-code">
+          <p>Scan QR Code to Pay</p>
+          <img src="{{payment_img}}" alt="QR Code" />
+        </div>
+        <br /><br />
+
+        <p>
+          Once you have made the payment, please submit the payment proof using
+          the link below:
+        </p>
+        <ul>
+          <li>
+            <button>
+              <a href="{{payment_proof_link}}">Submit Payment Proof</a>
+            </button>
+          </li>
+        </ul>
+
+        <br /><br />
+        <p>
+          Please keep this email for your records. In case of any discrepancies
+          or if you need to make changes to your registration details, please
+          contact us at <b>{{contact_email}}</b>.
+        </p>
+        <br /><br />
+
+        <p>
+          We will be sharing further details and updates leading up to the
+          event, so please stay tuned to your email for important announcements.
+        </p>
+        <br /><br />
+
+        <p>
+          Thank you once again for choosing to be a part of our symposium. We
+          anticipate an enlightening and successful event, and we are thrilled
+          to have you on board.
+        </p>
+        <br /><br />
+
+        <p class="regards">
+          <b>Best regards,</b>
+          <br />
+          Gizzmo Team
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>© 2024 Gizzmo. All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/profile.php?id=61551881603513"
+            target="_blank"
+            style="--clr: #316ff6"
+          >
+          <img src="https://img.icons8.com/color/48/000000/facebook-new.png"/>
+          </a>
+          <a
+            href="https://www.instagram.com/cse_esec"
+            target="_blank"
+            style="--clr: #d62976"
+          >
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png"/>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/esecindia"
+            target="_blank"
+            style="--clr: #0077b5"
+          >
+          <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+          </a>
+          <a
+            href="https://youtube.com/@esecindia/"
+            target="_blank"
+            style="--clr: #cd201f"
+          >
+          <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

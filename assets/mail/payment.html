@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIZZMO 2K24 - A National Level Technical Symposium Invitation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      .container .header {
+        background-color: #252525;
+      }
+
+      .container .header img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+	  .container .header {
+        background-color: #252525;
+      }
+
+      .container .header img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .container .content {
+        padding: 1.5rem 2rem;
+      }
+
+      .container .content h2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+      .container .content p {
+        text-align: justify;
+      }
+      .container .content .text {
+        text-indent: 15px;
+      }
+      .container .content .regards {
+        text-align: right;
+        margin-top: 20px;
+      }
+      .container .content h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+      .container .content ul {
+        margin-left: 20px;
+        list-style: none;
+      }
+      .container .content ol li {
+        margin-bottom: 10px;
+      }
+      .container .content ol li button {
+        border: none;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+      }
+      .container .content ol li button a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: #00a524;
+        border-radius: 5px;
+      }
+      .container .content ol li b {
+        font-weight: bold;
+      }
+      .container .footer {
+        background-color: #252525;
+        padding: 1rem 2rem;
+        color: #fff;
+        text-align: center;
+      }
+
+      .container .footer p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .container .footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .container .footer .social-links a {
+        font-size: 1.5rem;
+        color: var(--clr);
+        transition: color 0.3s;
+      }
+
+      .container .footer .social-links a img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- TODO: Add Gizzmo Logo With Header -->
+      <div class="header">
+        <img src="{{gizzmo_logo}}" alt="Gizzmo Logo" />
+      </div>
+
+      <div class="content">
+        <h2>Dear {{participant_name}},</h2>
+
+        <p class="text">
+          We hope this message finds you well. We are writing to inform you that
+          we have successfully received your payment proof that you have
+          recently submitted. Thank you for promptly providing the necessary
+          details.
+        </p>
+        <br /><br />
+
+        <h3>Your Payment Details :</h3>
+        <ul>
+          <li><b>User ID :</b> {{user_id}}</li>
+
+          <li><b>Transaction ID :</b> {{transaction_id}}</li>
+
+          <li><b>Amount Paid :</b> {{amount}}</li>
+
+          <li><b>Date of Submission :</b> {{date}}</li>
+        </ul>
+        <br /><br />
+
+        <p class="text"></p>
+        <br /><br />
+
+        <p class="regards">
+          Best regards,
+          <br />
+          Gizzmo Team
+        </p>
+      </div>
+      <div class="footer">
+        <p>© 2024 Gizzmo. All rights reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/profile.php?id=61551881603513"
+            target="_blank"
+            style="--clr: #316ff6"
+          >
+          <img src="https://img.icons8.com/color/48/000000/facebook-new.png"/>
+          </a>
+          <a
+            href="https://www.instagram.com/cse_esec"
+            target="_blank"
+            style="--clr: #d62976"
+          >
+            <img src="https://img.icons8.com/color/48/000000/instagram-new.png"/>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/esecindia"
+            target="_blank"
+            style="--clr: #0077b5"
+          >
+          <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+          </a>
+          <a
+            href="https://youtube.com/@esecindia/"
+            target="_blank"
+            style="--clr: #cd201f"
+          >
+          <img src="https://img.icons8.com/color/48/000000/youtube-play.png"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
