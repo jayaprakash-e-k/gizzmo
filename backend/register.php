@@ -22,8 +22,8 @@ $paperSubmissionDeadline = "<b style='color: red;'>April 15, 2024</b>";
 $paymentProofLink = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . "://" . $_SERVER['SERVER_NAME'] . "/gizzmo/registerForm.php?";
 
 // Logo URL
-$gizzmoLogoURL = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . "://" . $_SERVER['SERVER_NAME'] . "/gizzmo/asset/img/symp_logo.png";
-$paymentQRURL = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . "://" . $_SERVER['SERVER_NAME'] . "/gizzmo/asset/img/payment-qr.png";
+$gizzmoLogoURL = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . "://" . $_SERVER['SERVER_NAME'] . "/gizzmo/assets/img/symp_logo.png";
+$paymentQRURL = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http") . "://" . $_SERVER['SERVER_NAME'] . "/gizzmo/assets/img/payment-qr.png";
 
 function validate($data)
 {
