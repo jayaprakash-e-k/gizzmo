@@ -108,7 +108,7 @@
                         <span class="error"> Note: gizzmo ID will be sent to your Email with Successfull Registration Email</span>
                     </div>
                     <div class="input-group">
-                        <input type="text" name="amount" id="amount" value="" readonly>
+                        <input type="text" name="amount" id="amount" value="250" readonly>
                         <label for="amount">Amount to be paid</label>
                     </div>
                     <div class="input-group">
@@ -532,6 +532,22 @@
                 });
             });
 
+
+            // Get URL Params: uid, email, operation
+            const urlParams = new URLSearchParams(window.location.search);
+            const uid = urlParams.get('uid');
+            const email = urlParams.get('email');
+            const operation = urlParams.get('operation');
+
+            if (operation == "payment_proof") {
+                $("#uid").val(uid);
+                $("#uid").attr("value", uid);
+                $("#email").val(email);
+                $("#email").attr("value", email);
+
+                $(".form-container").css("transform", "translateX(-200%)");
+                $(document).scrollTop(0);
+            }
         });
 
         // Phone Number Validation

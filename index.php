@@ -86,10 +86,6 @@
         <p>The Department of Computer Science and Engineering has been successfully functioning since 1998. It offers B.E. (Computer Science and Engineering) and M.E. (Computer Science and Engineering). The MoU signed by the Department are CISCO, Infosys (Campus Connect), MICROSOFT (Campus Agreement) and ORACLE. It organizes Symposia, Exhibitions, Conferences, Seminars and Workshops for both students and Faculty belonging to various Technical Educational Institutions, Research Scholars of Research Institutes and Industries all over India. The Department is Accredited by NBA, AICTE since 2009. The department comprises of 7 centralized air conditioned Computer Centers with 300 systems, state of the art computing facilities with sufficient power supply backup. Our students are placed in various top MNCs like CTS, TCS, Wipro, Infosys, IBM, Tech Mahendra, IBM, EDS, SAP Labs, Accenture, Mind Tree, Hexaware, etc.</p>
     </div>
 
-    <!-- <marquee scrollamount="5" scrolldelay="50">
-        Exclusively for Enginnering Students 😎-Registration Fees Rs.250💸 - Cash prize upto 30,000😮🎉
-    </marquee> -->
-
     <div class="events-no">
         <div class="event slide-left">
             <h1 id="technical">7</h1>

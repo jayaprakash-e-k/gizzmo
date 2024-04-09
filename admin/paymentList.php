@@ -200,7 +200,7 @@
             var path = window.location.pathname;
             var path = path.split('/admin/')[0];
 
-            screenshot.src = `${path}/uploads/payments/${uid}.png`;
+            screenshot.src = `https://erode-sengunathr.ac.in/${path}/uploads/payments/${uid}.png`;
         }
 
         // Download payment screenshot
@@ -214,7 +214,7 @@
             var path = path.split('/admin/')[0];
 
             var a = document.createElement('a');
-            a.href = `${path}/uploads/payments/${uid}.png`;
+            a.href = `https://erode-sengunathr.ac.in/${path}/uploads/payments/${uid}.png`;
 
             a.download = `Payment_Screenshot_${uid}.png`;
             a.click();

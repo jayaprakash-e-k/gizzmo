@@ -49,6 +49,7 @@
                 <table>
                     <tr>
                         <th>S.NO</th>
+                        <th>UID</th>
                         <th>NAME</th>
                         <th>PHONE</th>
                         <th>EMAIL</th>
@@ -150,6 +151,7 @@
             return `
             <tr id='${data.UID}'>
                 <td>${data.SNO}</td>
+                <td>${data.UID}</td>
                 <td>${data.NAME}</td>
                 <td>${data.PHONE}</td>
                 <td>${data.EMAIL}</td>
@@ -232,6 +234,10 @@
                                     </button>
                                 </div>
                                 <div class="user-info-content">
+                                    <div class="user-info-item">
+                                        <h3>User ID</h3>
+                                        <p>${user.UID}</p>
+                                    </div>
                                     <div class="user-info-item">
                                         <h3>Name</h3>
                                         <p>${user.NAME}</p>
